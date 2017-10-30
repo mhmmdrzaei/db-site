@@ -17,7 +17,31 @@
   <div class="container">
     <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
+        <div class="main-view-container">
+
+    <svg class="scene" 
+         version="1.1" 
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+                         
+        <svg class="text-container" xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 908.9 600.5">
+
+          
+                              
+          <text id="text-content" transform="translate(108.549 223.644)">
+            <tspan class="row row-1" x="0" y="0">DANA BUZZEE</tspan>
+
+          
+        </svg>
+
+                          
+    </svg>
+
+
+</div>
+
+
+
       </a>
     </h1>
 
