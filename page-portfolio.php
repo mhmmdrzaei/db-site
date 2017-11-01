@@ -27,8 +27,7 @@
           
 
            <div class="paragraph">
-                     <?php the_title(); ?>
-            
+            <?php the_title(); ?>
             </div>
          </div>
 
@@ -44,4 +43,3 @@
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
-<?php get_footer(); ?>
