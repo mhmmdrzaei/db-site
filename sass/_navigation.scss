@@ -1,14 +1,22 @@
 ul.menu {
-	margin: 0;
 	padding: 0;
+	width: 50%;
+	margin: 0 auto;
+	white-space:nowrap;
+	display: flex;
 	li {
-		display: inline;
 		margin-right: 10px;
+		text-align: center;
+		width: 25%;
+		list-style: none;
+
+		
 		a {
-			color: #333;
+			color: black;
 			padding: 10px;
-			background: #333;
-			color: white;
+			text-transform: uppercase;
+			font-weight: bold;
+			
 		}
 	}
 }

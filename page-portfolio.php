@@ -3,7 +3,7 @@
 <div class="main">
   <div class="container">
 
-    <div class="content">
+    <div class="content porftfolioContent">
     	 <?php $dreamBeanQuery = new WP_Query(array(
                // 'post_per_page' => 1,// if you want all its -1
                'post_type' => array( 'portfolio' ),

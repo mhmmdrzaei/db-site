@@ -30,6 +30,7 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 90%;
 }
 
 .content {
@@ -41,10 +42,16 @@ body {
 .full {
 	width: 100%;
 }
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
 
+//portfolio Page
 
-
-
+.porftfolioContent {
+	@extend .flex;
+}
 
 
 
