@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
-$stroke-dash-max: 400;
+$stroke-dash-max: 500;
 $easings__ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 $easings__ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 $easings__ease-in-out: cubic-bezier(.59,.03,.27,.89);
@@ -12,7 +12,7 @@ $font-family-stack: 'Poiret One', cursive;
 
 @keyframes DrawTextPath {
     0% {
-       stroke-dasharray: 0 $stroke-dash-max;
+       stroke-dasharray: 10 $stroke-dash-max;
     }
     100% {
         //stroke-dasharray: $stroke-dash-max $stroke-dash-max;
@@ -43,20 +43,20 @@ $font-family-stack: 'Poiret One', cursive;
 .row {
     fill: none;    
     stroke: black;
-    stroke-miterlimit: 10;
+    stroke-miterlimit: 1000;
     font-family: $font-family-stack;
     font-size: 10.5em;
-    stroke-width: .0225em;
-    letter-spacing: 10;
-    stroke-dasharray: 0 $stroke-dash-max 0 10;
-    stroke-dashoffset: 10;
+    stroke-width: .025em;
+    letter-spacing: 0;
+    stroke-dasharray: 10 $stroke-dash-max 0 10;
+    stroke-dashoffset: 00;
 
     &.drawing {
-        animation: DrawTextPath 4.1s $easings__ease-in-out;
+        animation: DrawTextPath 25.1s $easings__ease-in-out;
         animation-fill-mode: forwards;
-      animation-iteration-count: once;
+      animation-iteration-count: infinite;
       animation-direction: alternate;
-      animation-delay: 0.3s;
+      animation-delay: 1.3s;
     }
     
 }
