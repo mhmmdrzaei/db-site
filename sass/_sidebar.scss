@@ -15,7 +15,7 @@ $font-family-stack: 'Poiret One', cursive;
        stroke-dasharray: 10 $stroke-dash-max;
     }
     100% {
-        //stroke-dasharray: $stroke-dash-max $stroke-dash-max;
+        stroke-dasharray: $stroke-dash-max $stroke-dash-max;
         stroke-dasharray: 100% 100%;
     }        
 }
@@ -52,7 +52,7 @@ $font-family-stack: 'Poiret One', cursive;
     stroke-dashoffset: 00;
 
     &.drawing {
-        animation: DrawTextPath 25.1s $easings__ease-in-out;
+        animation: DrawTextPath 5.1s $easings__ease-in-out;
         animation-fill-mode: forwards;
       animation-iteration-count: infinite;
       animation-direction: alternate;
