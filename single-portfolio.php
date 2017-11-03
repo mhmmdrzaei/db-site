@@ -23,18 +23,7 @@
               
             <?php the_field('project_description'); ?>
            </div>
-       <!-- video -->
-       <?php while( has_sub_fields('video') ): ?>
-       <div class="video slide">
-           <?php the_sub_field('video_styling'); ?>
-           <div class="embed-container">
-             <?php the_sub_field('embedded_link'); ?>
-           </div>
-       </div>
-       <?php endwhile;//end of vimeo ?>
-   
 
-          
 
           
           <?php while( has_sub_fields('essay_pdf_attacher') ): ?>
@@ -50,6 +39,11 @@
                    <?php endif; ?>
                   </div>
           <?php endwhile;//end of pdf attacher field ?>
+       
+   
+
+          
+
   
               
       <?php get_footer(); ?>

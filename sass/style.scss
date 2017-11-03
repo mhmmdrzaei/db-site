@@ -104,7 +104,7 @@ header {
 //portfolio single 
 #carousel {
     width: 100%;
-    height: 700px;
+    height: 550px;
     
     overflow: visible;
     white-space:nowrap;
@@ -115,13 +115,14 @@ header {
 }
 .slide {
 	img {
-		height: 650px;
+		max-height: 550px;
+		width: auto;
 	}
 }
 .ContentText {
 	white-space: normal;
 	position: absolute;
-    bottom: 20%;
+    height: 550px;
     width: 500px;
     margin: 0 35px;
     padding-right: 50px;
@@ -149,6 +150,9 @@ header {
    	
 }
 
+
+//pages
+
 .socialMedia {
 	font-weight: bold;
 	a {
@@ -158,9 +162,37 @@ header {
 .cvAttacher {
 	font-weight: bold;
 	margin: 10px 0;
+	text-transform: uppercase;
 }
 
 .active {
 	border-bottom: 3px solid black;
+
+}
+//mediaQueries 
+
+@media(max-width: 650px){
+
+	.singlePortfolio {
+		margin: 0 auto;
+		h2 {
+			margin-left: 0;
+		}
+	}
+
+	#carousel {
+		white-space: inherit;
+		height: auto;
+		display: block;
+		.slide {
+			width: 100%;
+			padding: 0;
+		}
+		.ContentText {
+			width: 100%;
+			margin: 0;
+			position: inherit;
+		}
+	}
 
 }
