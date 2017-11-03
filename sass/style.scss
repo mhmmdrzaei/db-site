@@ -34,9 +34,8 @@ body {
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	padding-top: 150px;
+
 }
 
 .full {
@@ -55,6 +54,19 @@ a {
 	&:visited {
    		color: grey;
    	}
+}
+//header 
+header {
+	position: fixed;
+	width: 100%;
+	.container {
+		@extend .flex;
+    align-items: center;
+    height: 100px;
+	}
+	h1 {
+		width: 35%;
+	}
 }
 
 //portfolio Page
@@ -77,13 +89,13 @@ a {
 	height: 220px;
 	overflow: hidden;
 	img {
-		max-height: 220px;
+		height: 220px;
 		max-width: 220px;
 		
 	}
 }
 .paragraph {
-	text-align: center;
+
 	color:black;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -112,11 +124,12 @@ a {
     bottom: 20%;
     width: 500px;
     margin: 0 35px;
+    padding-right: 50px;
 }
 .singlePortfolio {
 	margin: 0;
 	h2 {
-		margin-left: 20px;
+		margin-left: 6%;
 	}
 }
 .essay {
@@ -134,4 +147,20 @@ a {
 
    	}
    	
+}
+
+.socialMedia {
+	font-weight: bold;
+	a {
+		margin-right: 10px;
+	}
+}
+.cvAttacher {
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.active {
+	border-bottom: 3px solid black;
+
 }

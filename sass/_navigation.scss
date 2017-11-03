@@ -1,9 +1,9 @@
 ul.menu {
 	padding: 0;
 	width: 50%;
-	margin: 0 auto;
 	white-space:nowrap;
 	display: flex;
+
 	li {
 		margin-right: 10px;
 		text-align: center;
@@ -16,6 +16,7 @@ ul.menu {
 			padding: 10px;
 			text-transform: uppercase;
 			font-weight: bold;
+			padding: 0;
 			
 		}
 	}

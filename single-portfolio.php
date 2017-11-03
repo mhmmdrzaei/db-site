@@ -2,9 +2,10 @@
 
 <div class="main">
   <div class="container singlePortfolio">
-     <h2> <?php the_title(); ?></h2>
+    
 
     <div class="content" id="carousel">
+       <h2> <?php the_title(); ?></h2>
       <?php if( have_rows('images') ) : ?>
                    <?php while( have_rows('images') ) : the_row(); ?>
                        <div class="slide">
@@ -51,7 +52,8 @@
           <?php endwhile;//end of pdf attacher field ?>
   
               
-              
+      <?php get_footer(); ?>
+        
               
    
              

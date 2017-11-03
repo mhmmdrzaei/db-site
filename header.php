@@ -24,7 +24,7 @@
          xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
                          
-        <svg class="text-container" xmlns="http://www.w3.org/2000/svg" viewBox="-270 -50 2708.9 400.5">
+        <svg class="text-container" xmlns="http://www.w3.org/2000/svg" viewBox="50 -200 2708.9 450.5">
 
           
                               

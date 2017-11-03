@@ -45,3 +45,11 @@ $(function(){
 	window.addEventListener('DOMContentLoaded', demo.init, false);
 
 });
+
+//active Links 
+
+    $("ul.menu li a").each(function() {
+        if (this.href == window.location.href) {
+            $(this).addClass("active");
+        }
+    });
