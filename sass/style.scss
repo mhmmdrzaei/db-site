@@ -13,6 +13,7 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'hamburger';
 /*
 ====================================
 Default Styling
@@ -74,6 +75,7 @@ header {
 .porftfolioContent {
 	@extend .flex;
 	margin-top: 20px;
+	justify-content: center; 
 }
 .redProject {
 	margin: 10px;
@@ -90,7 +92,7 @@ header {
 	overflow: hidden;
 	img {
 		height: 220px;
-		max-width: 220px;
+		width: inherit;
 		
 	}
 }
@@ -122,21 +124,20 @@ header {
 .ContentText {
 	white-space: normal;
 	position: absolute;
-    height: 550px;
+    // height: 550px;
     width: 500px;
     margin: 0 35px;
     padding-right: 50px;
 }
 .singlePortfolio {
-	margin: 0;
 	h2 {
-		margin-left: 6%;
+		margin-bottom: 10px;
 	}
 }
 .essay {
 	margin: 0 35px;
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     color: black;
     text-transform: uppercase;
    	font-weight: bold;
@@ -161,7 +162,7 @@ header {
 }
 .cvAttacher {
 	font-weight: bold;
-	margin: 10px 0;
+	margin: 20px 0;
 	text-transform: uppercase;
 }
 
@@ -169,18 +170,49 @@ header {
 	border-bottom: 3px solid black;
 
 }
+nav {
+	display: none;
+}
+.desktopNav {
+	width: 65%;
+}
+.away {
+	display: none
+}
+//contact 
+.socialMediaContact{
+	margin-top: 15%;
+	a {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+}
+
+.aboutContent {
+		margin: 10px auto;
+		margin-top: 5%;
+	}
 //mediaQueries 
 
 @media(max-width: 650px){
+	header {
+		margin-top: 20px;
+	}
 
 	.singlePortfolio {
 		margin: 0 auto;
 		h2 {
 			margin-left: 0;
+			margin-bottom: 10px;
 		}
 	}
 
 	#carousel {
+
 		white-space: inherit;
 		height: auto;
 		display: block;
@@ -189,10 +221,74 @@ header {
 			padding: 0;
 		}
 		.ContentText {
+			margin-top: 10px;
 			width: 100%;
 			margin: 0;
 			position: inherit;
+			height: auto;
 		}
+	}
+	nav {
+		display: block;
+	}
+	.desktopNav {
+		display: none;
+	}
+	.headerContainer {
+		display: block;
+		h1 {
+			width: 90%;
+			margin: 0 auto;
+			position: absolute;
+			left: 10%;
+		}
+	}
+	ul.menu {
+		margin-top: 80px;
+		display: block;
+		position: relative;
+		top: 21%;
+		li {
+			width: 100%;
+		}
+	}
+	.active {
+		border: none;
+	}
+	.essay {
+		position: inherit;
+		display: block;
+		text-align: center;
+		margin: 20px 0;
+	}
+	.socialMedia {
+		a {
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+	.aboutContent {
+		margin: 10px auto;
+		margin-top: 5%;
+	}
+
+}
+@media(max-width: 563px){
+	.redProject {
+		border: none;
+		&:hover {
+			border: none;
+		}
+		width: 100%;
+		.projectpost {
+			.overflowImage{
+				margin: 0 auto;
+			}
+		}
+		.paragraph {
+			text-align: center;
+		}
+
 	}
 
 }

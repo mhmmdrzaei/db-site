@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
+  <div class="container headerContainer">
     <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <div class="main-view-container">
@@ -45,10 +45,27 @@
       </a>
     </h1>
 
-    <?php wp_nav_menu( array(
+ <div class="desktopNav">   <?php wp_nav_menu( array(
+     'container' => false,
+     'theme_location' => 'primary'
+   )); ?></div>
+
+    <nav>
+  
+  <input id="nav" type="checkbox" />
+  
+  <label for="nav">
+    <b><i></i><i></i><i></i></b>
+  </label>
+  
+  <menu class="away">
+        <?php wp_nav_menu( array(
       'container' => false,
       'theme_location' => 'primary'
     )); ?>
+  </menu>
+  
+</nav>
   </div> <!-- /.container -->
 </header><!--/.header-->
 

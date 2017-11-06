@@ -53,3 +53,46 @@ $(function(){
             $(this).addClass("active");
         }
     });
+//Menu toggle
+        $('label').on('click', function(event) {
+            // event.preventDefault();
+            $('nav menu').toggleClass('away');
+            
+
+
+
+            
+
+        });
+        $('.fuckyou').on('click', function(event) {
+            event.preventDefault();
+            $('.menuContent').toggleClass('away');
+            $('.Menuflex').toggleClass('menuFlexOpen');
+            // $('#menuToggle').toggleClass('strikeMenu');
+
+
+
+            
+
+        });
+        $('.fafa').click(function(){
+                $('#nav-icon4').toggleClass('open');
+
+                    $(".headerMenu").toggleClass('dropdown');
+
+                    // $('.borderWhite').toggle();
+                    // $(".fa-bars").toggleClass('fa-borderss');
+                    $(".headerMenu a").on("click", function(){
+                    // console.log('fuckyou');
+                    $(".headerMenu").hide();
+
+
+                    $("hamburger").hover(function() {
+                        $(this).css("cursor", "pointer");
+                    }, function() {
+                        $(this).css("", "");
+                    });
+
+                }); 
+
+            });
